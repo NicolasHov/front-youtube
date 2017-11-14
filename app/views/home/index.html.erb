@@ -1,15 +1,30 @@
 
 <div class="main-content">
+    <br>
 
     <div class="wrapper">
-        <div class="one"> <iframe width="420" height="315"
+        <div class="one"> <iframe width="550" height="350" 
             src="https://www.youtube.com/embed/XGSy3_Czz8k?controls=1">
         </iframe>
-        <p>Titre de la chanson</p>
-        <p>23329049838934 vues</p>
+        <p><strong>
+            Titre de la chanson</strong></p>
+        <p>23 329 049 838 934 vues</p>
         </div>
-        <div class="two">Deux</div>
-        <div class="four">Quatre</div>
+            <div class="five">
+                <p> Lecture automatique</p>
+                <% 6.times do %>
+                    <div class="description"> blabla <br> blablabla</div>
+                    <div class="interligne-descr"></div>
+                <% end %>
+            </div>
+            <div class="four">
+                <p>A suivre</p>
+                <% 6.times do %>
+                    <p><iframe width="180" height="100" 
+                        src="https://www.youtube.com/embed/XGSy3_Czz8k?controls=1">
+                    </iframe></p>
+                <% end %>        
+            </div>
         <div class="infos">
             <p><a class="navbar-brand" href="#"><%= link_to image_tag("lol.jpg", :size => "50x50", class: "mini-artist"), method: :post %>
             </a>Nicolas <br>  vidéo ajoutée le 3 octobre</p>
